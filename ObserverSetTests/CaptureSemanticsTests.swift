@@ -7,7 +7,7 @@
 //
 
 import XCTest
-import ObserverSet
+@testable import ObserverSet
 
 class CaptureSemanticsTests: XCTestCase {
     
@@ -32,7 +32,7 @@ class CaptureSemanticsTests: XCTestCase {
         let observee = TestObservee()
         
         init() {
-            observee.event.add(self, self.dynamicType.voidHandler)
+            observee.event.add(self, type(of: self).voidHandler)
         }
         
         func voidHandler() {
