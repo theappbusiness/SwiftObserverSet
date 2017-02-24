@@ -12,6 +12,7 @@ import XCTest
 import ObserverSet
 
 class ObserverSetTests: XCTestCase {
+  
     class TestObservee {
         let voidObservers = ObserverSet<Void>()
         let stringObservers = ObserverSet<String>()
@@ -32,12 +33,12 @@ class ObserverSetTests: XCTestCase {
     
     class TestObserver {
         init(observee: TestObservee) {
-            observee.voidObservers.add(self, self.dynamicType.voidSent)
-            observee.stringObservers.add(self, self.dynamicType.stringChanged)
-            observee.twoStringObservers.add(self, self.dynamicType.twoStringChanged)
-            observee.intObservers.add(self, self.dynamicType.intChanged)
-            observee.intAndStringObservers.add(self, self.dynamicType.intAndStringChanged)
-            observee.namedParameterObservers.add(self, self.dynamicType.namedParameterSent)
+            observee.voidObservers.add(self, type(of: self).voidSent)
+            observee.stringObservers.add(self, type(of: self).stringChanged)
+            observee.twoStringObservers.add(self, type(of: self).twoStringChanged)
+            observee.intObservers.add(self, type(of: self).intChanged)
+            observee.intAndStringObservers.add(self, type(of: self).intAndStringChanged)
+            observee.namedParameterObservers.add(self, type(of: self).namedParameterSent)
         }
         
         deinit {
@@ -72,17 +73,12 @@ class ObserverSetTests: XCTestCase {
     func testBasics() {
         let observee = TestObservee()
         var obj: TestObserver? = TestObserver(observee: observee)
-        
         let token = observee.intAndStringObservers.add{ print("int and string closure: \($0) \($1)") }
-        print("intAndStringObservers: \(observee.intAndStringObservers.description)")
-        
         observee.testNotify()
         print("Destroying test observer \(obj)")
         obj = nil
         observee.testNotify()
         observee.intAndStringObservers.remove(token)
         observee.testNotify()
-        
-        print("intAndStringObservers: \(observee.intAndStringObservers.description)")
     }
 }
