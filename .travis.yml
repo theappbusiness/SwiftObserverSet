@@ -2,4 +2,4 @@ language: objective-c
 osx_image: xcode8.0
 
 script:
-- xcodebuild -project ObserverSet.xcodeproj  -scheme ObserverSet -configuration Debug -sdk iphonesimulator9.3 -destination "OS=10.0,name=iPhone SE"
+- xcodebuild -project ObserverSet.xcodeproj  -scheme ObserverSet -configuration Debug
