@@ -1,0 +1,5 @@
+language: objective-c
+osx_image: xcode8.2
+
+script:
+- xcodebuild -project ObserverSet.xcodeproj -scheme ObserverSet -configuration Debug -sdk macosx10.12 test
