@@ -10,9 +10,11 @@ Currently you can integrate `TABObserverSet` into your project by adding `Observ
 
 ## Usage
 
-Usage is very simple. Similar to `NotificationCenter`, you have a _broadcaster_ and _observers_. While `NotificationCenter`-style broadcasting can potentially result in multiple _broadcasters_ and multiple _observers_, `TABObserverSet` results in a single _broadcaster_  and multiple _observers_.
+Usage is very simple. 
 
-Here's a way you could set up a _broadcaster_:
+Similar to `NotificationCenter`, you have a single _broadcaster_ and multiple _observers_. While `NotificationCenter`-style broadcasting can potentially result in a many-to-many relationship, `TABObserverSet` results in a one-to-many relationship, due to there only being a single broadcaster.
+
+Here's a way you could set up a broadcaster:
 
 ```swift
 class NetworkPoller {
