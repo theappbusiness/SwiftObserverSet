@@ -4,6 +4,10 @@
 
 With a simple syntax, `TABObserverSet` is easy to use and read in your code.
 
+## Integration
+
+Currently you can integrate `TABObserverSet` into your project by adding `ObserverSet.swift` to your project's target.
+
 ## Usage
 
 Usage is very simple. Similar to `NotificationCenter`, you have a _broadcaster_ and _observers_. While `NotificationCenter`-style broadcasting can potentially result in multiple _broadcasters_ and multiple _observers_, `TABObserverSet` results in a single _broadcaster_  and multiple _observers_.
