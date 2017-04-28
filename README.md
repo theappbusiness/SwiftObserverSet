@@ -111,21 +111,6 @@ func test_networkPoller_notifiesObservers() {
 }
 ```
 
-It's important to remember the possibility of retain cycles when using closures. To avoid reference cycles, you can use a `weak` reference to `self` so that `self` isn't captured and retained in the closure:
-
-```swift
-networkPoller.networkPollObservers.add { [weak self] error in
-	guard strongSelf = self else { return }
-	// Do whatever you need to with `strongSelf`
-}
-```
-
-On the subject of retain cycles, this is valid code as shorthand but will also cause a retain cycle because Swift implicitly captures `self` strongly so that is has an instance to call the method on:
-
-```swift
-networkPoller.networkPollObservers.add(networkPolled)
-```
-
 ## Credits
 
 `TABObserverSet` is a fork of [`SwiftObserverSet `](https://github.com/mikeash/SwiftObserverSet), created by Mike Ash.
