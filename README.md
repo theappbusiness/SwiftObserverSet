@@ -1,0 +1,142 @@
+# TABObserverSet
+
+`TABObserverSet`, originally created by Mike Ash, provides a Swift-y alternative
+to the tradition `NotificationCenter` style of reactive programming.
+
+With a simple syntax, `TABObserverSet` is easy to use and read in your code.
+
+## Usage
+
+Usage is very simple. Similar to `NotificationCenter`, you have a _broadcaster_
+and _observers_. While `NotificationCenter` style broadcasting can potentially
+result in multiple _broadcasters_ and multiple _observers_, `TABObserverSet` results in a single
+_broadcaster_ and multiple _observers_.
+
+Here's a way you could set up a _broadcaster_:
+
+```swift
+
+class NetworkPoller {
+  
+  // Things that want to observe the broadcast can add themselves
+  // to this `ObserverSet`
+  let networkPollObservers = ObserverSet<Void>()
+  
+  // ... some magic code here which polls ... //
+  
+  private func networkPolled() {
+    
+    // Broadcast to any observers that the network has polled
+    networkPollObservers.notify()
+  }
+  
+}
+
+```
+
+Simple, right? In case you're wondering what the `Void` type is doing when setting up the observer set: `ObserverSet<Void>()`, that's essentially declaring that we're not going to be passing in an argument when notifying observers.
+
+You could declare that you will be passing any type, should you want to. Here's another example, where we pass an optional error when we notify observers:
+
+```swift
+
+class NetworkPoller {
+  
+  // Things that want to _subscribe_ to the _broadcast_ can add themselves
+  // to this `ObserverSet`
+  let networkPollObservers = ObserverSet<Error?>()
+  
+  // ... some magic code here which polls ... //
+  
+  private func networkPolled(_ error: Error?) {
+    
+    // Broadcast to any observers that the network has polled
+    networkPollObservers.notify(error)
+  }
+  
+}
+
+```
+
+So that's setting up the broadcaster, how about observers? That too is very simple:
+
+```swift
+
+let networkPoller = NetworkPoller()
+
+class SettingsViewModel {
+  
+  init() {
+    networkPoller.networkPollObservers.add(self, SettingsViewModel.networkPolled)
+  }
+  
+  private func networkPolled(_ error: Error?) {
+    if let error = error {
+      print("Error! \(error)")
+    } else {
+      print("Network polled! :D")
+    }
+  }
+  
+}
+
+class ResultsViewModel {
+  
+  init() {
+    networkPoller.networkPollObservers.add(self, ResultsViewModel.networkPolled)
+  }
+  
+  private func networkPolled(_ error: Error?) {
+    if let error = error {
+      print("Error! \(error)")
+    } else {
+      print("Network polled! :D")
+    }
+  }
+  
+}
+
+```
+
+In the above sample code, we have a single shared `NetworkPoller` instance (the _broadcaster_),
+and two view models which want to do their own thing when the network is polled, so they _observe_ the event individually. This is not too disimillar from the way you can set up `#selectors` in Swift, but it's a lot cleaner.
+
+You can also use closures to observe events, which is nice for testing:
+
+```swift
+
+  func test_networkPoller_notifiesObservers() {
+    let networkPoller = NetworkPoller()
+    let expectation = self.expectation(description: "Wait for network to poll")
+    networkPoller.networkPollObservers.add { error in
+      XCTAssertNil(error)
+      expectation.fulfill()
+    }
+    waitForExpectations(timeout: 1)
+  }
+
+```
+
+It's important to remember the possibility of retain cycles when using closures. To avoid reference cycles, you can use a `weak` reference to `self` so that `self` isn't captured and retained in the closure:
+
+```swift
+
+networkPoller.networkPollObservers.add { [weak self] error in
+	guard strongSelf = self else { return }
+	// Do whatever you need to with `strongSelf`
+}
+
+```
+
+On the subject of retain cycles, this is valid code as shorthand but will also cause a retain cycle because Swift implicitly captures `self` strongly so that is has an instance to call the method on:
+
+```swift
+
+networkPoller.networkPollObservers.add(networkPolled)
+
+```
+
+## Credits
+
+`TABObserverSet` is a fork of `SwiftObserverSet`, created by Mike Ash.
+Credit should be given to Mike Ash for the original idea.
