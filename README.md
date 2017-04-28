@@ -107,13 +107,13 @@ You can also use closures to observe events, which is nice for testing:
 
 ```swift
 func test_networkPoller_notifiesObservers() {
-	let networkPoller = NetworkPoller()
-	let expectation = self.expectation(description: "Wait for network to poll")
-   	networkPoller.networkPollObservers.add { error in
-   		XCTAssertNil(error)
-      	expectation.fulfill()
-	}
-   	waitForExpectations(timeout: 1)
+  let networkPoller = NetworkPoller()
+  let expectation = self.expectation(description: "Wait for network to poll")
+  networkPoller.networkPollObservers.add { error in
+    XCTAssertNil(error)
+    expectation.fulfill()
+  }
+  waitForExpectations(timeout: 1)
 }
 ```
 
