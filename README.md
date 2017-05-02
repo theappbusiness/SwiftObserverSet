@@ -122,4 +122,5 @@ func test_networkPoller_notifiesObservers() {
 ## Credits
 
 `TABObserverSet` is a fork of [`SwiftObserverSet `](https://github.com/mikeash/SwiftObserverSet), created by Mike Ash.
+
 Credit should be given to Mike Ash for the original idea.
