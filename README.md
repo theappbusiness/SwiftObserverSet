@@ -1,5 +1,7 @@
 # TABObserverSet
 
+[![CI Status](http://img.shields.io/travis/theappbusiness/TABObserverSet.svg?style=flat)](https://travis-ci.org/theappbusiness/TABObserverSet)
+
 `TABObserverSet`, originally conceived by [Mike Ash](https://github.com/mikeash/SwiftObserverSet), provides a Swift-y alternative to the traditional `NotificationCenter` style of reactive programming.
 
 With a simple syntax, `TABObserverSet` is easy to use and read in your code.
