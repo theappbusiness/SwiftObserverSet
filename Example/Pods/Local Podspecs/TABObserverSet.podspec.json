@@ -5,7 +5,7 @@
   "description": "TABObserverSet provides a Swift-y alternative to the traditional NotificationCenter style of reactive programming.\nWith a simple syntax, TABObserverSet is easy to use and read in your code.",
   "homepage": "https://github.com/theappbusiness/TABObserverSet",
   "license": {
-    "type": "MIT",
+    "type": "BSD",
     "file": "LICENSE"
   },
   "authors": {

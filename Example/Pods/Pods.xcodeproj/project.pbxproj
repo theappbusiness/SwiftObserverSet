@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		041839996A06AAE9D6AA214312F12DF8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		233606F7DA676528112C04B357213A22 /* TABObserverSet-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F5FE555E1CD6E75D5F06EA053004732 /* TABObserverSet-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		39305814C0795695BBFE468496EACE2F /* ObserverSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BBE3EBBB40B72559C753C5A345B0B6 /* ObserverSet.swift */; };
+		06800A96F8C77BA489EDA3817F40038D /* TABObserverSet-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 30527C373FDCC6329ED7384881A0F6A7 /* TABObserverSet-dummy.m */; };
+		233606F7DA676528112C04B357213A22 /* TABObserverSet-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 320FC7DD8E0E7A3FE023B383802710A9 /* TABObserverSet-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8157FC874A1929C76EAE2F740A63A6A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		8CAD10161F685C14B2E1596094E31DD9 /* ObserverSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87FEF794DA29E9333C86CFFA2A0DB4C /* ObserverSet.swift */; };
 		BBEC576B287C4BFADA82F88C725CC85C /* Pods-TABObserverSet_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E36D5EE419A16F0F876B89E568C7E856 /* Pods-TABObserverSet_Example-dummy.m */; };
 		D2F83C2D810F4079C1168D8F09E12084 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		D87274322875FBA404C1E5C0F98C6FCC /* Pods-TABObserverSet_Example-TABObserverSet_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A1FCBA3F2ABE4C916E51424A843F864 /* Pods-TABObserverSet_Example-TABObserverSet_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DA0C5F7AFE533DC111169E9D0011B7D0 /* TABObserverSet-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 97861921C141994DB7748FE3B79717FA /* TABObserverSet-dummy.m */; };
 		EBE53C7232E8C891134450FFA470C5FA /* Pods-TABObserverSet_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E312066F4EC28A1120A24C68E18161FC /* Pods-TABObserverSet_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F1E28484E6841B08917E5950D955B534 /* Pods-TABObserverSet_Example-TABObserverSet_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE7DC771112F7A966C64A3D19206969 /* Pods-TABObserverSet_Example-TABObserverSet_Tests-dummy.m */; };
 /* End PBXBuildFile section */
@@ -38,37 +38,37 @@
 
 /* Begin PBXFileReference section */
 		06E9C360035B60D69586C343C6D56EE5 /* Pods-TABObserverSet_Example-TABObserverSet_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TABObserverSet_Example-TABObserverSet_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		09D63DC5B95C53E5F64ECBF03CB02EF7 /* Pods_TABObserverSet_Example_TABObserverSet_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TABObserverSet_Example_TABObserverSet_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		09D63DC5B95C53E5F64ECBF03CB02EF7 /* Pods_TABObserverSet_Example_TABObserverSet_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TABObserverSet_Example_TABObserverSet_Tests.framework; path = "Pods-TABObserverSet_Example-TABObserverSet_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A1FCBA3F2ABE4C916E51424A843F864 /* Pods-TABObserverSet_Example-TABObserverSet_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TABObserverSet_Example-TABObserverSet_Tests-umbrella.h"; sourceTree = "<group>"; };
 		0BE1C1F67BCEC95608A336B89D4BF677 /* Pods-TABObserverSet_Example-TABObserverSet_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TABObserverSet_Example-TABObserverSet_Tests-resources.sh"; sourceTree = "<group>"; };
 		0E97AAAF6D119E270718844C48E02AE1 /* Pods-TABObserverSet_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TABObserverSet_Example-resources.sh"; sourceTree = "<group>"; };
 		10102E7233DAEFB9FE079405E55CADD7 /* Pods-TABObserverSet_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TABObserverSet_Example-frameworks.sh"; sourceTree = "<group>"; };
 		11036B2626A3577CC90AED1490F4EC66 /* Pods-TABObserverSet_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TABObserverSet_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		11608B6EE801822DA209CDF09E8DAF23 /* TABObserverSet.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = TABObserverSet.modulemap; sourceTree = "<group>"; };
-		1F5FE555E1CD6E75D5F06EA053004732 /* TABObserverSet-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TABObserverSet-umbrella.h"; sourceTree = "<group>"; };
 		227B46D43C96C24E1C14D236959A34E0 /* Pods-TABObserverSet_Example-TABObserverSet_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TABObserverSet_Example-TABObserverSet_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		2471FD67F0F66D88C8C5DB509D439DBC /* Pods_TABObserverSet_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TABObserverSet_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		24BBE3EBBB40B72559C753C5A345B0B6 /* ObserverSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ObserverSet.swift; sourceTree = "<group>"; };
-		314363FE8CF4DDAA012F61930E8DE4A1 /* TABObserverSet.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TABObserverSet.xcconfig; sourceTree = "<group>"; };
-		32B2EF4F5BCD80DEA0B959AB5FE1D70E /* Pods-TABObserverSet_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TABObserverSet_Example.modulemap"; sourceTree = "<group>"; };
+		2471FD67F0F66D88C8C5DB509D439DBC /* Pods_TABObserverSet_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TABObserverSet_Example.framework; path = "Pods-TABObserverSet_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		30527C373FDCC6329ED7384881A0F6A7 /* TABObserverSet-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TABObserverSet-dummy.m"; sourceTree = "<group>"; };
+		320FC7DD8E0E7A3FE023B383802710A9 /* TABObserverSet-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TABObserverSet-umbrella.h"; sourceTree = "<group>"; };
+		32B2EF4F5BCD80DEA0B959AB5FE1D70E /* Pods-TABObserverSet_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TABObserverSet_Example.modulemap"; sourceTree = "<group>"; };
 		32E56C6837F8C2D7AC5BB30F414DA685 /* Pods-TABObserverSet_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TABObserverSet_Example.release.xcconfig"; sourceTree = "<group>"; };
+		3C42E43528CEF5E3776FB45BD0A09955 /* TABObserverSet.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TABObserverSet.xcconfig; sourceTree = "<group>"; };
 		3EFB6647BD941D8510415202B95C78E3 /* Pods-TABObserverSet_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TABObserverSet_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		3F686E7703EBA3A173DC5C6E36463152 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55C0F0CC79FB46DA03D4043D894204C2 /* TABObserverSet.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TABObserverSet.modulemap; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		6E86E756D1E0B03225BA58E0E0A4B879 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B02E54F7F084F220ED8EB4732AAEDC4 /* Pods-TABObserverSet_Example-TABObserverSet_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TABObserverSet_Example-TABObserverSet_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		8AE4D3F019807AF94A9C9BDD2148E22A /* TABObserverSet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TABObserverSet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		97861921C141994DB7748FE3B79717FA /* TABObserverSet-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TABObserverSet-dummy.m"; sourceTree = "<group>"; };
+		8AE4D3F019807AF94A9C9BDD2148E22A /* TABObserverSet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TABObserverSet.framework; path = TABObserverSet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		98B865B3EE021CA19AEDD494AE358F98 /* Pods-TABObserverSet_Example-TABObserverSet_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TABObserverSet_Example-TABObserverSet_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		9AE8069B90A35F73F2EE77130E69EA02 /* TABObserverSet-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TABObserverSet-prefix.pch"; sourceTree = "<group>"; };
+		A87FEF794DA29E9333C86CFFA2A0DB4C /* ObserverSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ObserverSet.swift; sourceTree = "<group>"; };
 		BB3C082E6543BA5ADF972D30F7DE2A30 /* Pods-TABObserverSet_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TABObserverSet_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		CEE7DC771112F7A966C64A3D19206969 /* Pods-TABObserverSet_Example-TABObserverSet_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TABObserverSet_Example-TABObserverSet_Tests-dummy.m"; sourceTree = "<group>"; };
-		D08B145A07E19245ED22BD33D960936A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1D091DE2EFFBC506235867F6F8BE294 /* TABObserverSet-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TABObserverSet-prefix.pch"; sourceTree = "<group>"; };
 		E312066F4EC28A1120A24C68E18161FC /* Pods-TABObserverSet_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TABObserverSet_Example-umbrella.h"; sourceTree = "<group>"; };
 		E36D5EE419A16F0F876B89E568C7E856 /* Pods-TABObserverSet_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TABObserverSet_Example-dummy.m"; sourceTree = "<group>"; };
 		F13D85CFE8FB93DF7302A75E849DDCB1 /* Pods-TABObserverSet_Example-TABObserverSet_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TABObserverSet_Example-TABObserverSet_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		FEFEC27A75ECAD4AC7EFF3531B6C85EB /* Pods-TABObserverSet_Example-TABObserverSet_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TABObserverSet_Example-TABObserverSet_Tests.modulemap"; sourceTree = "<group>"; };
+		FD7284783FC72C73FEC3EBB30E5C2FBE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEFEC27A75ECAD4AC7EFF3531B6C85EB /* Pods-TABObserverSet_Example-TABObserverSet_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TABObserverSet_Example-TABObserverSet_Tests.modulemap"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +99,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0DE9AFE2E33ED3788D7104DC43B60F39 /* TABObserverSet */ = {
+			isa = PBXGroup;
+			children = (
+				A87FEF794DA29E9333C86CFFA2A0DB4C /* ObserverSet.swift */,
+				5745ADADE828AEAD79B6362E92441DA0 /* Support Files */,
+			);
+			name = TABObserverSet;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		1616226396525E457404EFFC3D145FD2 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0DE9AFE2E33ED3788D7104DC43B60F39 /* TABObserverSet */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
 		2A8554DDE5FBB4306F62A478F7F71353 /* Pods-TABObserverSet_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,32 +162,25 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		531E729D83029C97FC1CEB66C14CE910 /* Support Files */ = {
+		5745ADADE828AEAD79B6362E92441DA0 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				D08B145A07E19245ED22BD33D960936A /* Info.plist */,
-				11608B6EE801822DA209CDF09E8DAF23 /* TABObserverSet.modulemap */,
-				314363FE8CF4DDAA012F61930E8DE4A1 /* TABObserverSet.xcconfig */,
-				97861921C141994DB7748FE3B79717FA /* TABObserverSet-dummy.m */,
-				9AE8069B90A35F73F2EE77130E69EA02 /* TABObserverSet-prefix.pch */,
-				1F5FE555E1CD6E75D5F06EA053004732 /* TABObserverSet-umbrella.h */,
+				FD7284783FC72C73FEC3EBB30E5C2FBE /* Info.plist */,
+				55C0F0CC79FB46DA03D4043D894204C2 /* TABObserverSet.modulemap */,
+				3C42E43528CEF5E3776FB45BD0A09955 /* TABObserverSet.xcconfig */,
+				30527C373FDCC6329ED7384881A0F6A7 /* TABObserverSet-dummy.m */,
+				E1D091DE2EFFBC506235867F6F8BE294 /* TABObserverSet-prefix.pch */,
+				320FC7DD8E0E7A3FE023B383802710A9 /* TABObserverSet-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/TABObserverSet";
-			sourceTree = "<group>";
-		};
-		782698D5F4E07F0E4552EDB209D233BF /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Classes;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				DE19FED28D2FD54CF56CD644D8C8B04C /* Development Pods */,
+				1616226396525E457404EFFC3D145FD2 /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				CF5D4C880A61E88CD8B8C4D335E2F9F4 /* Products */,
 				47D505F852A6BF8C6CF8C0F560A17A29 /* Targets Support Files */,
@@ -182,17 +193,6 @@
 				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C44BB5877B5D3E650E5DA2A57BB5A1EF /* TABObserverSet */ = {
-			isa = PBXGroup;
-			children = (
-				24BBE3EBBB40B72559C753C5A345B0B6 /* ObserverSet.swift */,
-				531E729D83029C97FC1CEB66C14CE910 /* Support Files */,
-				E8C456B0DF0C3704390BBDB0BCFFA348 /* TABObserverSet */,
-			);
-			name = TABObserverSet;
-			path = ../..;
 			sourceTree = "<group>";
 		};
 		CF5D4C880A61E88CD8B8C4D335E2F9F4 /* Products */ = {
@@ -211,22 +211,6 @@
 				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		DE19FED28D2FD54CF56CD644D8C8B04C /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				C44BB5877B5D3E650E5DA2A57BB5A1EF /* TABObserverSet */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		E8C456B0DF0C3704390BBDB0BCFFA348 /* TABObserverSet */ = {
-			isa = PBXGroup;
-			children = (
-				782698D5F4E07F0E4552EDB209D233BF /* Classes */,
-			);
-			path = TABObserverSet;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,7 +265,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5788398EFDA25E2BE0DBB098068D1DA8 /* Build configuration list for PBXNativeTarget "TABObserverSet" */;
 			buildPhases = (
-				A1AF770CF634444015EF104BCBEA5080 /* Sources */,
+				853F2174AB6E42199F0D667C77A5E4F2 /* Sources */,
 				8654C66A40F610C876C8D639E9CB60C1 /* Frameworks */,
 				DFE33087C3D89DB33443E04E18E74734 /* Headers */,
 			);
@@ -349,20 +333,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		853F2174AB6E42199F0D667C77A5E4F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CAD10161F685C14B2E1596094E31DD9 /* ObserverSet.swift in Sources */,
+				06800A96F8C77BA489EDA3817F40038D /* TABObserverSet-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		98C9C9B4BCAFA7160750E923BD17E57D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F1E28484E6841B08917E5950D955B534 /* Pods-TABObserverSet_Example-TABObserverSet_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A1AF770CF634444015EF104BCBEA5080 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				39305814C0795695BBFE468496EACE2F /* ObserverSet.swift in Sources */,
-				DA0C5F7AFE533DC111169E9D0011B7D0 /* TABObserverSet-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,7 +495,7 @@
 		};
 		5B108674D198C2F7BFA96D8229E6BAB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 314363FE8CF4DDAA012F61930E8DE4A1 /* TABObserverSet.xcconfig */;
+			baseConfigurationReference = 3C42E43528CEF5E3776FB45BD0A09955 /* TABObserverSet.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -590,7 +574,7 @@
 		};
 		8E423DE8C3A0CF29EFB115B62633E963 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 314363FE8CF4DDAA012F61930E8DE4A1 /* TABObserverSet.xcconfig */;
+			baseConfigurationReference = 3C42E43528CEF5E3776FB45BD0A09955 /* TABObserverSet.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
