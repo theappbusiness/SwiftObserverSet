@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_TABObserverSet_Example_TABObserverSet_Tests : NSObject
+@end
+@implementation PodsDummy_Pods_TABObserverSet_Example_TABObserverSet_Tests
+@end

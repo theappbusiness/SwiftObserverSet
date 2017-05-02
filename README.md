@@ -1,6 +1,9 @@
 # TABObserverSet
 
 [![CI Status](http://img.shields.io/travis/theappbusiness/TABObserverSet.svg?style=flat)](https://travis-ci.org/theappbusiness/TABObserverSet)
+[![Version](https://img.shields.io/cocoapods/v/TABObserverSet.svg?style=flat)](http://cocoapods.org/pods/TABObserverSet)
+[![License](https://img.shields.io/cocoapods/l/TABObserverSet.svg?style=flat)](http://cocoapods.org/pods/TABObserverSet)
+[![Platform](https://img.shields.io/cocoapods/p/TABObserverSet.svg?style=flat)](http://cocoapods.org/pods/TABObserverSet)
 
 `TABObserverSet`, originally conceived by [Mike Ash](https://github.com/mikeash/SwiftObserverSet), provides a Swift-y alternative to the traditional `NotificationCenter` style of reactive programming.
 
@@ -8,11 +11,21 @@ With a simple syntax, `TABObserverSet` is easy to use and read in your code.
 
 ## Integration
 
-Currently you can integrate `TABObserverSet` into your project by adding `ObserverSet.swift` to your project's target.
+### Cocoapods
+
+To integrate `TABObserverSet` using Cocoapods, simply add the following to your podfile:
+
+```ruby
+pod 'TABObserverSet'
+```
+
+### Manual
+
+If you're not using Cocoapods, you can integrate `TABObserverSet` into your project by adding `ObserverSet.swift` to your project's target.
 
 ## Usage
 
-Usage is very simple. 
+Usage is very simple.
 
 Similar to `NotificationCenter`, you have a single _broadcaster_ and multiple _observers_. While `NotificationCenter`-style broadcasting can potentially result in a many-to-many relationship, `TABObserverSet` results in a one-to-many relationship, due to there only being a single broadcaster.
 
@@ -20,23 +33,23 @@ Here's a way you could set up a broadcaster:
 
 ```swift
 class NetworkPoller {
-  
+
   // Things that want to observe the broadcast can add themselves
   // to this `ObserverSet`
   let networkPollObservers = ObserverSet<Void>()
-  
+
   // ... some magic code here which polls ... //
-  
+
   private func networkPolled() {
-    
+
     // Broadcast to any observers that the network has polled
     networkPollObservers.notify()
   }
-  
+
 }
 ```
 
-Simple, right? In case you're wondering what the `Void` type is doing when setting up the observer set: 
+Simple, right? In case you're wondering what the `Void` type is doing when setting up the observer set:
 
 ```swift
 ObserverSet<Void>()
@@ -48,19 +61,19 @@ You could declare that you will be passing any type, should you want to. Here's 
 
 ```swift
 class NetworkPoller {
-  
+
   // Things that want to _subscribe_ to the _broadcast_ can add themselves
   // to this `ObserverSet`
   let networkPollObservers = ObserverSet<Error?>()
-  
+
   // ... some magic code here which polls ... //
-  
+
   private func networkPolled(_ error: Error?) {
-    
+
     // Broadcast to any observers that the network has polled
     networkPollObservers.notify(error)
   }
-  
+
 }
 ```
 
@@ -70,11 +83,11 @@ So that's setting up the broadcaster, how about observers? That too is very simp
 let networkPoller = NetworkPoller()
 
 class SettingsViewModel {
-  
+
   init() {
     networkPoller.networkPollObservers.add(self, SettingsViewModel.networkPolled)
   }
-  
+
   private func networkPolled(_ error: Error?) {
     if let error = error {
       print("Error! \(error)")
@@ -82,15 +95,15 @@ class SettingsViewModel {
       print("Network polled! :D")
     }
   }
-  
+
 }
 
 class ResultsViewModel {
-  
+
   init() {
     networkPoller.networkPollObservers.add(self, ResultsViewModel.networkPolled)
   }
-  
+
   private func networkPolled(_ error: Error?) {
     if let error = error {
       print("Error! \(error)")
@@ -98,7 +111,7 @@ class ResultsViewModel {
       print("Network polled! :D")
     }
   }
-  
+
 }
 ```
 
@@ -124,3 +137,7 @@ func test_networkPoller_notifiesObservers() {
 `TABObserverSet` is a fork of [`SwiftObserverSet `](https://github.com/mikeash/SwiftObserverSet), created by Mike Ash.
 
 Credit should be given to Mike Ash for the original idea.
+
+## License
+
+TABObserverSet is available under the MIT license. See the LICENSE file for more info.

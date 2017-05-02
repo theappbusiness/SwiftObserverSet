@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import ObserverSet
+@testable import TABObserverSet
 
 class CaptureSemanticsTests: XCTestCase {
     
