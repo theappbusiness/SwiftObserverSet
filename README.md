@@ -1,3 +1,5 @@
+![The App Business](Assets/logo.png)
+
 # TABObserverSet
 
 [![CI Status](http://img.shields.io/travis/theappbusiness/TABObserverSet.svg?style=flat)](https://travis-ci.org/theappbusiness/TABObserverSet)
