@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  TABObserverSet
 //
-//  Created by KaneCheshire on 05/02/2017.
-//  Copyright (c) 2017 KaneCheshire. All rights reserved.
+//  Created by Kane Cheshire on 05/02/2017.
+//  Copyright (c) 2017 The App Business. All rights reserved.
 //
 
 import UIKit
