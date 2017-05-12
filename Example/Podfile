@@ -1,0 +1,10 @@
+use_frameworks!
+
+target 'TABObserverSet_Example' do
+  pod 'TABObserverSet', :path => '../'
+
+  target 'TABObserverSet_Tests' do
+    inherit! :complete
+
+  end
+end

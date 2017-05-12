@@ -1,0 +1,16 @@
+PODS:
+  - TABObserverSet (1.0.0)
+
+DEPENDENCIES:
+  - TABObserverSet (from `../`)
+
+EXTERNAL SOURCES:
+  TABObserverSet:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  TABObserverSet: 96ed4e1d3adc1f96f72d64cc90e350a68f31399a
+
+PODFILE CHECKSUM: 2e3f4d903ccb8a2709142f24bf7c55fcd1c37710
+
+COCOAPODS: 1.2.1

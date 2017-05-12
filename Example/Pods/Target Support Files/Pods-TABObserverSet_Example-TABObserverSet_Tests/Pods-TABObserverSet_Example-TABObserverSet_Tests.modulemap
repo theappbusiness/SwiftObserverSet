@@ -1,0 +1,6 @@
+framework module Pods_TABObserverSet_Example_TABObserverSet_Tests {
+  umbrella header "Pods-TABObserverSet_Example-TABObserverSet_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
