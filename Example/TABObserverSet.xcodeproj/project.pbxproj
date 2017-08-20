@@ -18,6 +18,7 @@
 		D58706311F494B5F001B409F /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58706301F494B5F001B409F /* ExampleViewController.swift */; };
 		D58706331F494C00001B409F /* TupleObserverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58706321F494C00001B409F /* TupleObserverViewController.swift */; };
 		D5B4F86F1F496691001A321B /* UIAlertController+ObserverSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B4F86E1F496691001A321B /* UIAlertController+ObserverSet.swift */; };
+		D5B4F8711F496B56001A321B /* FrameObserverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B4F8701F496B56001A321B /* FrameObserverViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		D58706301F494B5F001B409F /* ExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExampleViewController.swift; path = "View Controllers/ExampleViewController.swift"; sourceTree = "<group>"; };
 		D58706321F494C00001B409F /* TupleObserverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TupleObserverViewController.swift; path = "View Controllers/TupleObserverViewController.swift"; sourceTree = "<group>"; };
 		D5B4F86E1F496691001A321B /* UIAlertController+ObserverSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIAlertController+ObserverSet.swift"; path = "Helpers/UIAlertController+ObserverSet.swift"; sourceTree = "<group>"; };
+		D5B4F8701F496B56001A321B /* FrameObserverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FrameObserverViewController.swift; path = "View Controllers/FrameObserverViewController.swift"; sourceTree = "<group>"; };
 		EA84DFF7DCE41B009C704645 /* Pods-TABObserverSet_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TABObserverSet_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TABObserverSet_Tests/Pods-TABObserverSet_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -176,6 +178,7 @@
 			children = (
 				D58706301F494B5F001B409F /* ExampleViewController.swift */,
 				D58706321F494C00001B409F /* TupleObserverViewController.swift */,
+				D5B4F8701F496B56001A321B /* FrameObserverViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -401,6 +404,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5B4F8711F496B56001A321B /* FrameObserverViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				D58706331F494C00001B409F /* TupleObserverViewController.swift in Sources */,
 				D58706311F494B5F001B409F /* ExampleViewController.swift in Sources */,
