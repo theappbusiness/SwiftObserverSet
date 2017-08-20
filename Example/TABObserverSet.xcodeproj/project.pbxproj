@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		3FE7F5BBD1858D94E5B5EAC8 /* Pods_TABObserverSet_Example_TABObserverSet_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C02EEBE8789D7A3B691C2E3B /* Pods_TABObserverSet_Example_TABObserverSet_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		C31C44511EB8B52C00C158A7 /* ObserverSetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31C444F1EB8B52C00C158A7 /* ObserverSetTests.swift */; };
 		C31C44521EB8B52C00C158A7 /* CaptureSemanticsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31C44501EB8B52C00C158A7 /* CaptureSemanticsTests.swift */; };
 		CDE3CA115A55D9A4144D56D4 /* Pods_TABObserverSet_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91F0F81E0DFB3AD90BD64E45 /* Pods_TABObserverSet_Example.framework */; };
+		D58706311F494B5F001B409F /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58706301F494B5F001B409F /* ExampleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +35,6 @@
 		607FACD01AFB9204008FA782 /* TABObserverSet_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TABObserverSet_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -51,6 +50,7 @@
 		C31C44501EB8B52C00C158A7 /* CaptureSemanticsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureSemanticsTests.swift; sourceTree = "<group>"; };
 		C35FFB93164240882E00D9AB /* Pods-TABObserverSet_Example-TABObserverSet_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TABObserverSet_Example-TABObserverSet_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TABObserverSet_Example-TABObserverSet_Tests/Pods-TABObserverSet_Example-TABObserverSet_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		CD3964E7D1977AC2F50BDA94 /* TABObserverSet.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TABObserverSet.podspec; path = ../TABObserverSet.podspec; sourceTree = "<group>"; };
+		D58706301F494B5F001B409F /* ExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExampleViewController.swift; path = "View Controllers/ExampleViewController.swift"; sourceTree = "<group>"; };
 		EA84DFF7DCE41B009C704645 /* Pods-TABObserverSet_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TABObserverSet_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TABObserverSet_Tests/Pods-TABObserverSet_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,7 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
-				607FACD21AFB9204008FA782 /* Example for TABObserverSet */,
+				607FACD21AFB9204008FA782 /* Example */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
 				62312914C2A6CDB3FEB423E2 /* Pods */,
@@ -95,17 +95,16 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		607FACD21AFB9204008FA782 /* Example for TABObserverSet */ = {
+		607FACD21AFB9204008FA782 /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				D587062F1F494B26001B409F /* View Controllers */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
-				607FACDC1AFB9204008FA782 /* Images.xcassets */,
-				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
+				D587062C1F494816001B409F /* Resources */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
-			name = "Example for TABObserverSet";
+			name = Example;
 			path = TABObserverSet;
 			sourceTree = "<group>";
 		};
@@ -156,6 +155,23 @@
 				A472204F04DDB9E87CA84C26 /* Pods-TABObserverSet_Example-TABObserverSet_Tests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		D587062C1F494816001B409F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				607FACDC1AFB9204008FA782 /* Images.xcassets */,
+				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		D587062F1F494B26001B409F /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D58706301F494B5F001B409F /* ExampleViewController.swift */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 		D70E168FFF3DB94C6565D075 /* Frameworks */ = {
@@ -371,8 +387,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				D58706311F494B5F001B409F /* ExampleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
