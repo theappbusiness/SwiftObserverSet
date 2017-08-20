@@ -16,6 +16,8 @@
 		C31C44521EB8B52C00C158A7 /* CaptureSemanticsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31C44501EB8B52C00C158A7 /* CaptureSemanticsTests.swift */; };
 		CDE3CA115A55D9A4144D56D4 /* Pods_TABObserverSet_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91F0F81E0DFB3AD90BD64E45 /* Pods_TABObserverSet_Example.framework */; };
 		D58706311F494B5F001B409F /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58706301F494B5F001B409F /* ExampleViewController.swift */; };
+		D58706331F494C00001B409F /* TupleObserverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58706321F494C00001B409F /* TupleObserverViewController.swift */; };
+		D5B4F86F1F496691001A321B /* UIAlertController+ObserverSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B4F86E1F496691001A321B /* UIAlertController+ObserverSet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		C35FFB93164240882E00D9AB /* Pods-TABObserverSet_Example-TABObserverSet_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TABObserverSet_Example-TABObserverSet_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TABObserverSet_Example-TABObserverSet_Tests/Pods-TABObserverSet_Example-TABObserverSet_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		CD3964E7D1977AC2F50BDA94 /* TABObserverSet.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TABObserverSet.podspec; path = ../TABObserverSet.podspec; sourceTree = "<group>"; };
 		D58706301F494B5F001B409F /* ExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExampleViewController.swift; path = "View Controllers/ExampleViewController.swift"; sourceTree = "<group>"; };
+		D58706321F494C00001B409F /* TupleObserverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TupleObserverViewController.swift; path = "View Controllers/TupleObserverViewController.swift"; sourceTree = "<group>"; };
+		D5B4F86E1F496691001A321B /* UIAlertController+ObserverSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIAlertController+ObserverSet.swift"; path = "Helpers/UIAlertController+ObserverSet.swift"; sourceTree = "<group>"; };
 		EA84DFF7DCE41B009C704645 /* Pods-TABObserverSet_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TABObserverSet_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TABObserverSet_Tests/Pods-TABObserverSet_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,9 +102,10 @@
 		607FACD21AFB9204008FA782 /* Example */ = {
 			isa = PBXGroup;
 			children = (
-				D587062F1F494B26001B409F /* View Controllers */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
+				D587062F1F494B26001B409F /* View Controllers */,
+				D5B4F86D1F496680001A321B /* Helpers */,
 				D587062C1F494816001B409F /* Resources */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
@@ -170,8 +175,17 @@
 			isa = PBXGroup;
 			children = (
 				D58706301F494B5F001B409F /* ExampleViewController.swift */,
+				D58706321F494C00001B409F /* TupleObserverViewController.swift */,
 			);
 			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		D5B4F86D1F496680001A321B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D5B4F86E1F496691001A321B /* UIAlertController+ObserverSet.swift */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 		D70E168FFF3DB94C6565D075 /* Frameworks */ = {
@@ -388,7 +402,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				D58706331F494C00001B409F /* TupleObserverViewController.swift in Sources */,
 				D58706311F494B5F001B409F /* ExampleViewController.swift in Sources */,
+				D5B4F86F1F496691001A321B /* UIAlertController+ObserverSet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
