@@ -27,14 +27,8 @@ final class FrameObserverViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         scaleObserver.add(self, FrameObserverViewController.transformSizeChanges)
-
         view.addSubview(squareView)
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
     }
 
     @IBAction fileprivate func rotatingRadiusSliderDidChange(_ sender: UISlider) {
@@ -58,9 +52,7 @@ final class FrameObserverViewController: UIViewController {
     }
 
     fileprivate func transformSizeChanges(_ transform: SquareTransform) {
-
         UIView.animate(withDuration: 0.75, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 2, options: [], animations: {
-
             /// Apply transform to squareView
             self.squareView.transform = transform
         }, completion: nil)

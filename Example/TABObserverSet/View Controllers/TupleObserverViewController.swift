@@ -19,15 +19,8 @@ final class TupleObserverViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         tableView.tableFooterView = UIView(frame: .zero)
-
-        /// Add observer for this class
         inputObserver.add(self, TupleObserverViewController.addNewItem)
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
     }
 
     @IBAction fileprivate func addButtonItemDidTap(_ sender: UIBarButtonItem) {
@@ -43,11 +36,8 @@ final class TupleObserverViewController: UITableViewController {
     /// Handle the observer event callback
     fileprivate func addNewItem(_ grocery: Grocery) {
         tableView.beginUpdates()
-
         groceries.insert(grocery, at: 0)
-
         tableView.insertRows(at: [IndexPath(row: 0, section: 0)], with: .fade)
-
         tableView.endUpdates()
     }
 }
@@ -60,7 +50,6 @@ extension TupleObserverViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-
         let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath)
 
         let name: String = groceries[indexPath.row].0
