@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': '/Users/luqman/Dev/TABObserverSet/Example/build/Debug-iphoneos/TABObserverSet/TABObserverSet.framework/Modules'
+    'contents': [{
+      'type': 'file',
+      'name': 'module.modulemap',
+      'external-contents': '/Users/luqman/Dev/TABObserverSet/Example/build/Pods.build/Debug-iphoneos/TABObserverSet.build/unextended-module.modulemap',
+    }]
+  }]
+}

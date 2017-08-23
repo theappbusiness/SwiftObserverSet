@@ -1,0 +1,10 @@
+framework module TABObserverSet {
+  umbrella header "TABObserverSet-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module TABObserverSet.Swift {
+    header "TABObserverSet-Swift.h"
+}
