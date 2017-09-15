@@ -20,7 +20,7 @@ class ObserverSetTests: XCTestCase {
         let namedParameterObservers = ObserverSet<(name: String, count: Int)>()
         
         func testNotify() {
-            voidObservers.notify()
+            voidObservers.notify(())
             stringObservers.notify("Sup")
             twoStringObservers.notify(("hello", "world"))
             intObservers.notify((42, 43))
@@ -36,7 +36,7 @@ class ObserverSetTests: XCTestCase {
             observee.twoStringObservers.add(self, type(of: self).twoStringChanged)
             observee.intObservers.add(self, type(of: self).intChanged)
             observee.intAndStringObservers.add(self, type(of: self).intAndStringChanged)
-            observee.namedParameterObservers.add(self, type(of: self).namedParameterSent)
+//            observee.namedParameterObservers.add(self, type(of: self).namedParameterSent)
         }
         
         deinit {
@@ -73,7 +73,7 @@ class ObserverSetTests: XCTestCase {
         var obj: TestObserver? = TestObserver(observee: observee)
         let token = observee.intAndStringObservers.add{ print("int and string closure: \($0) \($1)") }
         observee.testNotify()
-        print("Destroying test observer \(obj)")
+      print("Destroying test observer \(String(describing: obj))")
         obj = nil
         observee.testNotify()
         observee.intAndStringObservers.remove(token)
