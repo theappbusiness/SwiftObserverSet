@@ -51,6 +51,7 @@
 		C31C444F1EB8B52C00C158A7 /* ObserverSetTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObserverSetTests.swift; sourceTree = "<group>"; };
 		C31C44501EB8B52C00C158A7 /* CaptureSemanticsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureSemanticsTests.swift; sourceTree = "<group>"; };
 		C35FFB93164240882E00D9AB /* Pods-TABObserverSet_Example-TABObserverSet_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TABObserverSet_Example-TABObserverSet_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TABObserverSet_Example-TABObserverSet_Tests/Pods-TABObserverSet_Example-TABObserverSet_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		C3CFC3531F6C04B20068C00E /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = CHANGELOG.md; path = ../CHANGELOG.md; sourceTree = "<group>"; };
 		CD3964E7D1977AC2F50BDA94 /* TABObserverSet.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TABObserverSet.podspec; path = ../TABObserverSet.podspec; sourceTree = "<group>"; };
 		D58706321F494C00001B409F /* TupleObserverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TupleObserverViewController.swift; path = "View Controllers/TupleObserverViewController.swift"; sourceTree = "<group>"; };
 		D5B4F86E1F496691001A321B /* UIAlertController+ObserverSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIAlertController+ObserverSet.swift"; path = "Helpers/UIAlertController+ObserverSet.swift"; sourceTree = "<group>"; };
@@ -144,6 +145,7 @@
 			children = (
 				CD3964E7D1977AC2F50BDA94 /* TABObserverSet.podspec */,
 				B9C4152B42C415ABB9FAC57E /* README.md */,
+				C3CFC3531F6C04B20068C00E /* CHANGELOG.md */,
 				1080CC9F2F2DC9A38A4F437D /* LICENSE */,
 			);
 			name = "Podspec Metadata";
