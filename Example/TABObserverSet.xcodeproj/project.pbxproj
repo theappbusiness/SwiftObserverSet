@@ -14,6 +14,7 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		C31C44511EB8B52C00C158A7 /* ObserverSetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31C444F1EB8B52C00C158A7 /* ObserverSetTests.swift */; };
 		C31C44521EB8B52C00C158A7 /* CaptureSemanticsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31C44501EB8B52C00C158A7 /* CaptureSemanticsTests.swift */; };
+		C3CFC3551F6C06910068C00E /* .swift-version in Resources */ = {isa = PBXBuildFile; fileRef = C3CFC3541F6C06910068C00E /* .swift-version */; };
 		CDE3CA115A55D9A4144D56D4 /* Pods_TABObserverSet_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91F0F81E0DFB3AD90BD64E45 /* Pods_TABObserverSet_Example.framework */; };
 		D58706331F494C00001B409F /* TupleObserverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58706321F494C00001B409F /* TupleObserverViewController.swift */; };
 		D5B4F86F1F496691001A321B /* UIAlertController+ObserverSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B4F86E1F496691001A321B /* UIAlertController+ObserverSet.swift */; };
@@ -52,6 +53,7 @@
 		C31C44501EB8B52C00C158A7 /* CaptureSemanticsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureSemanticsTests.swift; sourceTree = "<group>"; };
 		C35FFB93164240882E00D9AB /* Pods-TABObserverSet_Example-TABObserverSet_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TABObserverSet_Example-TABObserverSet_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TABObserverSet_Example-TABObserverSet_Tests/Pods-TABObserverSet_Example-TABObserverSet_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		C3CFC3531F6C04B20068C00E /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = CHANGELOG.md; path = ../CHANGELOG.md; sourceTree = "<group>"; };
+		C3CFC3541F6C06910068C00E /* .swift-version */ = {isa = PBXFileReference; lastKnownFileType = text; path = ".swift-version"; sourceTree = "<group>"; };
 		CD3964E7D1977AC2F50BDA94 /* TABObserverSet.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TABObserverSet.podspec; path = ../TABObserverSet.podspec; sourceTree = "<group>"; };
 		D58706321F494C00001B409F /* TupleObserverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TupleObserverViewController.swift; path = "View Controllers/TupleObserverViewController.swift"; sourceTree = "<group>"; };
 		D5B4F86E1F496691001A321B /* UIAlertController+ObserverSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIAlertController+ObserverSet.swift"; path = "Helpers/UIAlertController+ObserverSet.swift"; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				CD3964E7D1977AC2F50BDA94 /* TABObserverSet.podspec */,
 				B9C4152B42C415ABB9FAC57E /* README.md */,
 				C3CFC3531F6C04B20068C00E /* CHANGELOG.md */,
+				C3CFC3541F6C06910068C00E /* .swift-version */,
 				1080CC9F2F2DC9A38A4F437D /* LICENSE */,
 			);
 			name = "Podspec Metadata";
@@ -290,6 +293,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3CFC3551F6C06910068C00E /* .swift-version in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
