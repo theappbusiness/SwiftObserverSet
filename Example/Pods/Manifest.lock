@@ -1,5 +1,5 @@
 PODS:
-  - TABObserverSet (1.0.0)
+  - TABObserverSet (1.1.1)
 
 DEPENDENCIES:
   - TABObserverSet (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  TABObserverSet: 96ed4e1d3adc1f96f72d64cc90e350a68f31399a
+  TABObserverSet: 9473fa8c6ac15d39180074a9838b3c4cd3e3c48c
 
 PODFILE CHECKSUM: 2e3f4d903ccb8a2709142f24bf7c55fcd1c37710
 
