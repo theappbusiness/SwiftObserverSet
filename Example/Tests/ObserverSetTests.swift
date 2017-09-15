@@ -73,7 +73,7 @@ class ObserverSetTests: XCTestCase {
         var obj: TestObserver? = TestObserver(observee: observee)
         let token = observee.intAndStringObservers.add{ print("int and string closure: \($0) \($1)") }
         observee.testNotify()
-      print("Destroying test observer \(String(describing: obj))")
+        print("Destroying test observer \(String(describing: obj))")
         obj = nil
         observee.testNotify()
         observee.intAndStringObservers.remove(token)
