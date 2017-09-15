@@ -2,4 +2,4 @@ language: generic
 osx_image: xcode9
 
 script:
-- xcodebuild -workspace Example/TABObserverSet.xcworkspace -scheme TABObserverSet-Example -configuration Debug -sdk iphonesimulator -destination 'OS=11.0,name=iPhone 6s' test
+- xcodebuild -workspace Example/TABObserverSet.xcworkspace -scheme TABObserverSet-Example -configuration Debug -sdk iphonesimulator11.0 -destination "OS=11.0,name=iPhone 6s" build
