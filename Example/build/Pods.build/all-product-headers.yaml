@@ -1,0 +1,60 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/luqman/Dev/TABObserverSet/Example/build/Debug-iphoneos/Pods_TABObserverSet_Example.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Pods-TABObserverSet_Example-umbrella.h",
+          'external-contents': "/Users/luqman/Dev/TABObserverSet/Example/Pods/Target Support Files/Pods-TABObserverSet_Example/Pods-TABObserverSet_Example-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "Pods_TABObserverSet_Example-Swift.h",
+          'external-contents': "/Users/luqman/Dev/TABObserverSet/Example/build/Debug-iphoneos/Pods_TABObserverSet_Example.framework/Headers/Pods_TABObserverSet_Example-Swift.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/luqman/Dev/TABObserverSet/Example/build/Debug-iphoneos/Pods_TABObserverSet_Example.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/luqman/Dev/TABObserverSet/Example/build/Pods.build/Debug-iphoneos/Pods-TABObserverSet_Example.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/luqman/Dev/TABObserverSet/Example/build/Debug-iphoneos/TABObserverSet/TABObserverSet.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "TABObserverSet-Swift.h",
+          'external-contents': "/Users/luqman/Dev/TABObserverSet/Example/build/Debug-iphoneos/TABObserverSet/TABObserverSet.framework/Headers/TABObserverSet-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "TABObserverSet-umbrella.h",
+          'external-contents': "/Users/luqman/Dev/TABObserverSet/Example/Pods/Target Support Files/TABObserverSet/TABObserverSet-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/luqman/Dev/TABObserverSet/Example/build/Debug-iphoneos/TABObserverSet/TABObserverSet.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/luqman/Dev/TABObserverSet/Example/build/Pods.build/Debug-iphoneos/TABObserverSet.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}
