@@ -96,6 +96,18 @@ open class ObserverSet<Parameters> {
     }
   }
   
+
+  /**
+   Removes an observer from the list.
+
+   - parameter observer: An observer to remove from the list of observers.
+   */
+  open func removeObserver(_ observer: AnyObject) {
+    synchronized {
+      self.entries = self.entries.filter{ $0.observer !== observer }
+    }
+  }
+
   /**
    Call this method to notify all observers.
    
