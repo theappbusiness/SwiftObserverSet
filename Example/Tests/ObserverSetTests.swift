@@ -10,7 +10,7 @@ import XCTest
 @testable import TABObserverSet
 
 class ObserverSetTests: XCTestCase {
-  
+    
     class TestObservee {
         let voidObservers = ObserverSet<Void>()
         let stringObservers = ObserverSet<String>()
@@ -28,6 +28,10 @@ class ObserverSetTests: XCTestCase {
     }
     
     class TestObserver {
+        
+        var stringNotificationsReceived = [String]()
+        var twoStringNotificationsReceived = [(String, String)]()
+        
         init(observee: TestObservee) {
             observee.voidObservers.add(self, type(of: self).voidSent)
             observee.stringObservers.add(self, type(of: self).stringChanged)
@@ -46,10 +50,12 @@ class ObserverSetTests: XCTestCase {
         
         func stringChanged(s: String) {
             print("stringChanged: " + s)
+            stringNotificationsReceived.append(s)
         }
         
         func twoStringChanged(s1: String, s2: String) {
             print("twoStringChanged: \(s1) \(s2)")
+            twoStringNotificationsReceived.append(s1, s2)
         }
         
         func intChanged(i: Int, j: Int) {
@@ -75,5 +81,17 @@ class ObserverSetTests: XCTestCase {
         observee.testNotify()
         observee.intAndStringObservers.remove(token)
         observee.testNotify()
+    }
+    
+    func testRemoveObserver() {
+        let sut = TestObservee()
+        let observer = TestObserver(observee: sut)
+        sut.testNotify()
+        XCTAssertEqual(observer.stringNotificationsReceived, ["Sup"])
+        XCTAssertTrue(observer.twoStringNotificationsReceived.elementsEqual([("hello", "world")], by: ==))
+        sut.twoStringObservers.removeObserver(observer)
+        sut.testNotify()
+        XCTAssertEqual(observer.stringNotificationsReceived, ["Sup", "Sup"])
+        XCTAssertTrue(observer.twoStringNotificationsReceived.elementsEqual([("hello", "world")], by: ==))
     }
 }
