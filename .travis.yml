@@ -1,5 +1,8 @@
-language: objective-c
-osx_image: xcode8.2
+os:
+- osx
+
+language: generic
+osx_image: xcode9
 
 script:
-- xcodebuild -workspace Example/TABObserverSet.xcworkspace -scheme TABObserverSet-Example -configuration Debug -sdk iphonesimulator -destination 'OS=10.0,name=iPhone SE' test
+- xcodebuild -workspace Example/TABObserverSet.xcworkspace -scheme TABObserverSet-Example -configuration Debug -sdk iphonesimulator11.0 -destination "OS=11.0,name=iPhone 6s" build
