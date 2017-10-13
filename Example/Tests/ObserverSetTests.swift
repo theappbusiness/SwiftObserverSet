@@ -55,7 +55,7 @@ class ObserverSetTests: XCTestCase {
         
         func twoStringChanged(s1: String, s2: String) {
             print("twoStringChanged: \(s1) \(s2)")
-            twoStringNotificationsReceived.append(s1, s2)
+          twoStringNotificationsReceived.append((s1, s2))
         }
         
         func intChanged(i: Int, j: Int) {
