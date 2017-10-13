@@ -18,7 +18,7 @@
 - Converted to be a Cocoapod
 - Added Travis CI support
 
-## 1
+## 1.0.0
 
 - Initial release by Mike Ash
 
