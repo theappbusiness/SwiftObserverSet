@@ -4,6 +4,10 @@
 
 - Converted to Swift 4
 
+## 1.2.0
+
+- Added the ability to remove an observer by reference
+
 ## 1.1.1
 
 - Added cross-platform support
