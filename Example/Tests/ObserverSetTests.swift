@@ -17,7 +17,6 @@ class ObserverSetTests: XCTestCase {
         let twoStringObservers = ObserverSet<(String, String)>()
         let intObservers = ObserverSet<(Int, Int)>()
         let intAndStringObservers = ObserverSet<(Int, String)>()
-        let namedParameterObservers = ObserverSet<(name: String, count: Int)>()
         
         func testNotify() {
             voidObservers.notify(())
@@ -25,7 +24,6 @@ class ObserverSetTests: XCTestCase {
             twoStringObservers.notify(("hello", "world"))
             intObservers.notify((42, 43))
             intAndStringObservers.notify((42, "hello"))
-            namedParameterObservers.notify((name: "someName", count: 42))
         }
     }
     
@@ -36,7 +34,6 @@ class ObserverSetTests: XCTestCase {
             observee.twoStringObservers.add(self, type(of: self).twoStringChanged)
             observee.intObservers.add(self, type(of: self).intChanged)
             observee.intAndStringObservers.add(self, type(of: self).intAndStringChanged)
-//            observee.namedParameterObservers.add(self, type(of: self).namedParameterSent)
         }
         
         deinit {
