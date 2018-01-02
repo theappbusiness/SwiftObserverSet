@@ -19,7 +19,7 @@ class ObserverSetTests: XCTestCase {
         let intAndStringObservers = ObserverSet<(Int, String)>()
         
         func testNotify() {
-            voidObservers.notify(())
+            voidObservers.notify()
             stringObservers.notify("Sup")
             twoStringObservers.notify(("hello", "world"))
             intObservers.notify((42, 43))

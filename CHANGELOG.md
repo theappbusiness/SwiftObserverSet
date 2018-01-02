@@ -1,5 +1,9 @@
 #  Change Log
 
+## 2.1.0
+
+- Simplify `notify()` call site when `Parameters == Void`
+
 ## 2.0.0
 
 - Converted to Swift 4
