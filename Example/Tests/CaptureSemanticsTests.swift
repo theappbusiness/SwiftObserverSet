@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  CaptureSemanticsTests.swift
 //  ObserverSet
 //
 //  Created by Karl Traunmüller on 26/02/16.
@@ -19,9 +19,9 @@ class CaptureSemanticsTests: XCTestCase {
         let observee = TestObservee()
         
         init() {
-            observee.event.add({ [weak self] () -> Void in
+            observee.event.add { [weak self] () -> Void in
                 self?.foo()
-                })
+            }
         }
         
         private func foo() {
