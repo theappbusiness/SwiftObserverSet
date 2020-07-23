@@ -3,7 +3,7 @@
 //  TABObserverSet
 //
 //  Created by Kane Cheshire on 05/02/2017.
-//  Copyright (c) 2017 The App Business. All rights reserved.
+//  Copyright (c) 2017 Kin + Carta. All rights reserved.
 //
 
 import UIKit
